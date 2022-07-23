@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: $main-font;
+  color: $primary-color;
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* COMMON STYLES */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button {
+  cursor: pointer;
+}
+.section {
+  padding: 60px 0;
+  &__title {
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    color: $primary-color;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+    &__title {
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/* TEAM SECTION */
+.team {
+  background-color: $background-light-color;
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

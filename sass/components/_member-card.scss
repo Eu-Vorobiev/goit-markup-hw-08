@@ -1,0 +1,84 @@
+/* MEMBER CARD */
+.member {
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  flex: 1 0 45%;
+
+  &__photo {
+    border-radius: 4px 4px 0px 0px;
+    display: block;
+    line-height: 0;
+  }
+  &__img {
+    border-radius: inherit;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__info {
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    padding: 30px;
+  }
+  &__name {
+    font-weight: 500;
+    color: $primary-color;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__proff {
+    font-weight: 400;
+    color: $grey-color;
+    margin: 0 0 16px;
+  }
+  &__social {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+    }
+    &-link {
+      background-color: transparent;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $icon-grey-color;
+      transition: color $transition, background-color $transition;
+      padding: 12px;
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+        color: $white-color;
+      }
+    }
+    &-icon {
+      fill: currentColor;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .member {
+    &__img {
+      min-height: 374px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .member {
+    flex: 1 0 270px;
+    &__img {
+      min-height: 260px;
+    }
+    &__proff {
+      margin: 0 0 14px;
+    }
+  }
+}

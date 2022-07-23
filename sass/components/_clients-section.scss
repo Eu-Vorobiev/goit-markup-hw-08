@@ -1,0 +1,48 @@
+/* CLIENTS SECTION */
+.clients {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    &-item {
+      flex: 1 0 45%;
+    }
+    &-link {
+      border: 1px solid $icon-grey-color;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $icon-grey-color;
+      transition: border-color $transition, color $transition;
+      &:hover,
+      &:focus {
+        border-color: $accent-color;
+        color: $accent-color;
+      }
+    }
+    &-icon {
+      fill: currentColor;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    &__list {
+      &-item {
+        flex: 1 0 30%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__list {
+      &-item {
+        flex: 1 0 12%;
+      }
+    }
+  }
+}
