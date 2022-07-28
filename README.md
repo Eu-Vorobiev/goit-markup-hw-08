@@ -1,1 +1,1 @@
-# GitHub Pages [eu-vorobiev.github.io/goit-markup-hw-08](https://eu-vorobiev.github.io/goit-markup-hw-08/)
+# GitHub Pages [eu-vorobiev.github.io/web-webstudio](https://eu-vorobiev.github.io/web-webstudio/)
